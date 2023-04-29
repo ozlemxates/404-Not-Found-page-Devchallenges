@@ -14,6 +14,7 @@ body, html {
 main {
     margin: 40px 119px 24px 77px;
     position: fixed;
+    overflow: auto;
 }
 
 nav p {
@@ -101,6 +102,13 @@ footer {
 
 footer span {
     font-weight: 700;
+}
+
+@media (max-width: 2560px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 1300px) {
