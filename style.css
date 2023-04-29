@@ -6,15 +6,14 @@
 
 body, html {
     height: 100%;
+    max-width: 100%; 
     margin: 0;
     padding: 0;
 }
 
 main {
     margin: 40px 119px 24px 77px;
-    max-width: 100%; 
     position: fixed;
-    overflow: hidden;
 }
 
 nav p {
@@ -111,9 +110,14 @@ footer span {
     }
     main { 
       margin: 20px 1px 24px 18px;
-      overflow: hidden;
+      overflow: scroll;
+      -webkit-overflow-scrolling: touch;
       max-width: 100%;
-      max-height: max-content;
+      max-height: 100%;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
     }
 
     .container {
